@@ -37,12 +37,3 @@
     "zod": "3.24.2"
   }
 }
-
-
-listen 443 ssl;
-server_name umpidesafio.work www.umpidesafio.work;
-
-ssl_certificate /etc/letsencrypt/live/umpidesafio.work/fullchain.pem;
-ssl_certificate_key /etc/letsencrypt/live/umpidesafio.work/privkey.pem;
-include /etc/letsencrypt/options-ssl-nginx.conf;
-ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
